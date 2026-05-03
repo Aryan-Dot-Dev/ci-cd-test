@@ -12,3 +12,7 @@ provider "aws" {
     s3  = "http://ministack:4566"
   }
 }
+
+resource "aws_ecr_repository" "repo" {
+  name = "devops-test"
+}
