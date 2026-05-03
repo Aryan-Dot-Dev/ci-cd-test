@@ -27,7 +27,12 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t devops-test:latest .'
+                sh '''
+                    docker build -t devops-test:latest .
+                    docker tag devops-test:latest localhost:4566/devops-test:latest
+                    docker push localhost:4566/devops-test:latest
+                '''
+
             }
         }
 

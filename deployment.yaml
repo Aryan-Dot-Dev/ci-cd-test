@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: devops-test
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: devops-test
+  template:
+    metadata:
+      labels:
+        app: devops-test
+    spec:
+      containers:
+      - name: devops-test
+        image: devops-test:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 3000

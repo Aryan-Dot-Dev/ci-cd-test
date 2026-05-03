@@ -32,3 +32,8 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 
 # Finder (MacOS) folder config
 .DS_Store
+terraform/.terraform
+terraform/.terraform/providers/registry.terraform.io/hashicorp/aws/6.43.0/linux_amd64/LICENSE.txt
+terraform/terraform.tfstate.backup
+terraform/.terraform.lock.hcl
+terraform/terraform.tfstate
