@@ -10,6 +10,7 @@ provider "aws" {
   endpoints { 
     ec2 = "http://ministack:4566"
     s3  = "http://ministack:4566"
+    ecr = "http://ministack:4566"
   }
 }
 
