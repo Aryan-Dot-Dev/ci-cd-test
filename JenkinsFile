@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        nodejs 'NodeJS'
+    }
+
     environment {
         IMAGE_NAME = "devops-test"
         LOCALSTACK_URL = "http://localhost:4566"
