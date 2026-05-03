@@ -3,7 +3,6 @@ pipeline {
 
     tools {
         nodejs 'NodeJS'
-        terraform 'Terraform-Local'
     }
 
     environment {
