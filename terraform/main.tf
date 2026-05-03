@@ -7,8 +7,8 @@ provider "aws" {
   skip_metadata_api_check     = true
   skip_requesting_account_id  = true
 
-  endpoints {
-    ec2 = "http://localstack:4566"
-    s3  = "http://localstack:4566"
+  endpoints { 
+    ec2 = "http://ministack:4566"
+    s3  = "http://ministack:4566"
   }
 }
